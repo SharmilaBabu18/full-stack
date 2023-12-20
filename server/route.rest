@@ -1,0 +1,32 @@
+
+//have to install REST Client for this to work
+
+POST http://localhost:5000/todos
+Content-Type: application/json
+
+{
+    "title":"JaulMan"
+}
+
+###
+
+GET http://localhost:5000/todos
+
+###
+
+GET http://localhost:5000/todos/655c73e4a7ca9edb34666a65
+
+###
+DELETE http://localhost:5000/todos/655c73e4a7ca9edb34666a65
+###
+
+PATCH http://localhost:5000/todos/655c73e4a7ca9edb34666a65
+Content-Type: application/json
+
+{
+    "title" : "dinner"
+}
+###
+
+
+PUT http://localhost:5000/todos/complete/655ed9a93b2c04e7abd9db3c
